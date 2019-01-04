@@ -153,6 +153,12 @@ app.get('/signup',(req,res) =>
     res.render('signup',{title: 'SignUp'});
 })
 
+app.get('/dashboard',(req,res) =>
+{
+    res.render('dashboard',{title: 'Hola'});
+});
+
+
 app.post('/addsignupdetails',(req,res) =>
 {
     let name = req.body.names;
