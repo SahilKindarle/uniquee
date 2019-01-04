@@ -1,0 +1,25 @@
+extend layout 
+
+block content
+    .row
+        .container
+            .col.s12
+                .card-panel.grey.lighten-5.z-depth-1(style='margin-top:30px;border-radius:15px')
+                    .row.valign-wrapper
+                        .col.s4
+                            img.circle.responsive-img(src='images/puppy.jpg', alt='')
+                            // notice the "circle" class
+                        .col.s8
+                            span.black-text
+                                h5.center
+                                    | Subject name
+                                p
+
+                                    | Data regarding test
+                .col.s12
+                    
+                    .col.s6 
+                        a.waves-effect.waves-light.btn(style='background:#42a5f5;border-radius:64px') button
+                    .col.s6 
+                        a.waves-effect.waves-light.btn(style='background:#42a5f5;border-radius:64px') button
+
