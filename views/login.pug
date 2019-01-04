@@ -1,0 +1,23 @@
+extend layout 
+    
+block content
+    .row
+        .col.s12.m4
+        .col.s12.m4.z-depth-5(style='border-radius:10px')
+            .row
+                .container(style='height=100px')
+                    p
+                        | Login to your account 
+                        .input-field.col.s12
+                            i.material-icons.prefix(style='color:#42a5f5') account_circle
+                            input#icon_prefix.validate(type='text')
+                            label(for='icon_prefix') User Name
+                        .input-field.col.s12
+                            i.material-icons.prefix(style='color:#42a5f5') lock_circle
+                            input#icon_prefix.validate(type='text')
+                            label(for='icon_prefix') Password
+                        button.btn.waves-effect.waves-light(type='submit', name='action')(style='border-radius:15px;background-color:#42a5f5')
+                                | Login
+                                i.material-icons.right 
+                            
+
