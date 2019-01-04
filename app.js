@@ -12,9 +12,9 @@ const DBPATH = process.env.DATABASE_URL || 'postgres://irjmfvxh:EAj3N4DcMuOt8QeZ
 //Create Connection
 const db = mysql.createConnection({
     host : 'db4free.net',
-    user: 'cysta123',
-    password: 'cysta123',
-    database: 'cysta_db'
+    user: 'uniquee',
+    password: 'uniquee123',
+    database: 'uniquee'
 });
 
 db.connect((err) =>{
