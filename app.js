@@ -158,6 +158,11 @@ app.get('/dashboard',(req,res) =>
     res.render('dashboard',{title: 'Hola'});
 });
 
+app.get('/result',(req,res) =>
+{
+    res.render('result',{title: 'Result'});
+});
+
 
 app.post('/addsignupdetails',(req,res) =>
 {

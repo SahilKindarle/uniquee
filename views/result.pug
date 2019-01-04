@@ -1,0 +1,206 @@
+extends layout
+
+block content
+        
+    .container
+        .row
+            .col.s12.l4
+                .card.z-depth-5
+                    .card-content.black-text
+                        span.card-title Aptitude Test
+                        p
+                            | Reviews data 
+                        canvas#myChart(width='400', height='400')
+                        h4
+                            | Level: Medium
+                        
+
+                    .card-action
+                        a(href='#') This is a link
+                        a(href='#') This is a link
+
+
+            .col.s12.l4
+                .card.z-depth-5
+                    .card-content.black-text
+                        span.card-title Maths
+                        p
+                            | Reviews data 
+                        canvas#mlyChart(width='400', height='400')
+                        h4
+                            | Level: Medium
+                        
+
+                    .card-action
+                        a(href='#') This is a link
+                        a(href='#') This is a link
+
+            
+            .col.s12.l4
+                .card.z-depth-5
+                    .card-content.black-text
+                        span.card-title Reading
+                        p
+                            | Reviews data 
+                        canvas#mylChart(width='400', height='400')
+                        h4
+                            | Level: Medium
+                        
+
+                    .card-action
+                        a(href='#') This is a link
+                        a(href='#') This is a link
+           
+
+            .col.s12.l4
+                .card.z-depth-5
+                    .card-content.black-text
+                        span.card-title Technical
+                        p
+                            | Reviews data 
+                        canvas#myllChart(width='400', height='400')
+                        h4
+                            | Level: Medium
+                        
+
+                    .card-action
+                        a(href='#') This is a link
+                        a(href='#') This is a link
+
+block scripts
+        script.
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+            labels: ["Test 1", "Test 2", "Test 2"],
+            datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3],
+            backgroundColor: ["#FF6384"," #36A2EB","#FFCD56"],
+            borderColor: [
+            "red",
+            "blue",
+            "yellow"
+            ],
+            borderWidth: 1
+            }]
+            },
+            options: {
+            scales: {
+            xAxes: [{
+            display: false
+          }],
+          yAxes: [{
+            display: false
+          }],
+            ticks: {
+            beginAtZero:true
+            }
+            
+            }
+            }
+            });
+
+
+            var ctx = document.getElementById("mlyChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+            labels: ["Test 1", "Test 2", "Test 2"],
+            datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3],
+            backgroundColor: ["#FF6384"," #36A2EB","#FFCD56"],
+            borderColor: [
+            "red",
+            "blue",
+            "yellow"
+            ],
+            borderWidth: 1
+            }]
+            },
+            options: {
+            scales: {
+            xAxes: [{
+            display: false
+          }],
+          yAxes: [{
+            display: false
+          }],
+            ticks: {
+            beginAtZero:true
+            }
+            
+            }
+            }
+            });
+
+
+            var ctx = document.getElementById("mylChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+            labels: ["Test 1", "Test 2", "Test 2"],
+            datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3],
+            backgroundColor: ["#FF6384"," #36A2EB","#FFCD56"],
+            borderColor: [
+            "red",
+            "blue",
+            "yellow"
+            ],
+            borderWidth: 1
+            }]
+            },
+            options: {
+            scales: {
+            xAxes: [{
+            display: false
+          }],
+          yAxes: [{
+            display: false
+          }],
+            ticks: {
+            beginAtZero:true
+            }
+            
+            }
+            }
+            });
+
+
+            var ctx = document.getElementById("myllChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+            labels: ["Test 1", "Test 2", "Test 2"],
+            datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3],
+            backgroundColor: ["#FF6384"," #36A2EB","#FFCD56"],
+            borderColor: [
+            "red",
+            "blue",
+            "yellow"
+            ],
+            borderWidth: 1
+            }]
+            },
+            options: {
+            scales: {
+            xAxes: [{
+            display: false
+          }],
+          yAxes: [{
+            display: false
+          }],
+            ticks: {
+            beginAtZero:true
+            }
+            
+            }
+            }
+            });
+        
