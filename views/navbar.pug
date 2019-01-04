@@ -20,14 +20,25 @@ header
                     //-     li
                     //-         a.grey-text.text-darken-4(href="/contact") Contact
 
-    ul#nav-mobile.sidenav
+    ul#nav-mobile.sidenav.grey
         li
-            a(href="/") Home
+            .user-view
+                .background.black
+                    
+                a(href='#user')
+                    img.circle(src='images/puppy.jpg')
+                a(href='#name')
+                    span.white-text.name John Doe
+                a(href='#email')
+                    span.white-text.email jdandturk@gmail.com
+
         li
-            a(href="/projects") Projects
+            a(href="/") LogOut
         li
-            a(href="/about") About
+            a(href="/projects") Subject1 
         li
-            a(href="/shop") Shop
+            a(href="/about") Subject2
         li
-            a(href="/contact") Contact
+            a(href="/shop") Subject3
+        li
+            a(href="/contact") Subject4

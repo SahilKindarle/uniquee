@@ -5,7 +5,7 @@ var logger = require('morgan')
 const bodyParser = require('body-parser')
 var cookieParser = require('cookie-parser')
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
 const DBPATH = process.env.DATABASE_URL || 'postgres://irjmfvxh:EAj3N4DcMuOt8QeZDpJtEufIytTbRN-F@elmer.db.elephantsql.com:5432/irjmfvxh'
 
 
