@@ -1,8 +1,9 @@
 extends layout
 
 block content
-    .row    
-        .container
+        
+    .container
+        .row
             .col.s12.l4
                 .card.z-depth-5
                     .card-content.black-text
@@ -19,12 +20,12 @@ block content
                         a(href='#') This is a link
 
             .col.s12.l4
-                .card()
+                .card
                     .card-content.black-text(style="background-image: linear-gradient(45deg, #36D1DC, #5B86E5")
                         span.card-title Maths Test
                         p
                             | Reviews data 
-                        canvas#myChart(width='400', height='400')
+                        canvas#myChart(width='300', height='400')
                         h4
                             | Level: Medium
                         
