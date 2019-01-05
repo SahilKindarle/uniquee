@@ -5,11 +5,12 @@ header
                 .container
                     a.grey-text.text-darken-4.sidenav-trigger.hide-on-large-only(href="#", data-target="nav-mobile", onclick="sidenavinstance.open()")
                         i.material-icons.button-collapse menu
-                        
+
     ul#nav-mobile.sidenav
         li
             .user-view
-                .background.black
+                .background
+                    img(src="/images/lollol.jpg", alt="")
                     
                 a(href='#user')
                     img.circle(src='images/puppy.jpg')
@@ -20,11 +21,11 @@ header
 
         
         li
-            a(href="/bookroom.html") 
+            a(href="/test") 
                 i.material-icons(style='color:#42a5f5') date_range
                 | View Quiz
         li
-            a(href="/books.html")
+            a(href="/result")
                 i.material-icons(style='color:#42a5f5') money
                 | Results
         li
@@ -33,7 +34,7 @@ header
                 | Profile
        
         li  
-            a(href="/")
+            a(href="/login")
                 i.material-icons(style='color:#42a5f5') lock
-                | Logout
+                | Login
             

@@ -173,6 +173,11 @@ app.get('/congrats',(req,res) =>
     res.render('congrats',{title: 'Test'});
 });
 
+app.get('/result',(req,res) =>
+{
+    res.render('result',{title: 'Test'});
+});
+
 
 app.post('/addsignupdetails',(req,res) =>
 {
