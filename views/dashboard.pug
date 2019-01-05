@@ -1,28 +1,46 @@
 extend layout 
 
-block content 
-    .container 
-        .row 
-            .col.s6
-                a.waves-effect.waves-light.btn-large(style='margin-top:20px;border-radius:64px')
-                   
-                    | Add Quiz
-            .col.s6
-                a.waves-effect.waves-light.btn-large(style='margin-top:20px;border-radius:64px')
-                   
-                    | Delete Quiz
+block content
+    .row
+        .container
+            .col.s12
+                .card-panel.valign-wrapper.grey.lighten-5.z-depth-1(style='margin-top:30px;border-radius:15px')
+                    .row(style='margin:0')
+                        .col.s4
+                            img.circle.responsive-img(src='images/puppy.jpg', alt='')
+                            // notice the "circle" class
+                        .col.s8
+                            span.black-text
+                                h5.center
+                                    | Subject name
+                                p.center
 
-            .col.s6
-                a.waves-effect.waves-light.btn-large(style='margin-top:20px;border-radius:64px')
-                   
-                    | Update Quiz
+                                    | Data regarding test
+                .container 
+                    .row 
+                        .col.s6
+                            a.full-width.waves-effect.waves-light.btn-large(style='margin-top:20px;border-radius:64px')
+                            
+                                | Add Quiz
+                        .col.s6
+                            a.red.full-width.waves-effect.waves-light.btn-large(style='margin-top:20px;border-radius:64px')
+                            
+                                | Delete Quiz
 
-            .col.s6
-                a.waves-effect.waves-light.btn-large(style='margin-top:20px;border-radius:64px')
-                   
-                    | Delete Quiz
+                        .col.s6
+                            a.full-width.waves-effect.waves-light.btn-large(style='margin-top:20px;border-radius:64px')
+                            
+                                | Update Quiz
 
-            .col.s6
-                a.waves-effect.waves-light.btn-large(style='margin-top:20px;border-radius:64px')
-                   
-                    | Delete Quiz
+                        .col.s6
+                            a.full-width.waves-effect.waves-light.btn-large(style='margin-top:20px;border-radius:64px')
+                            
+                                | Result Quiz
+
+
+
+
+
+
+
+
